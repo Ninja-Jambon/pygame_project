@@ -1,4 +1,5 @@
 import pygame
+import os
 
 pygame.font.init()
 
@@ -12,6 +13,12 @@ FPS = 60
 BLACK = (0, 0, 0)
 CYAN = (0, 255, 255)
 WHITE = (255,255,255)
+
+RED_BOY = pygame.image.load(
+    os.path.join("Assets","red_sprite.png"))
+BLUE_BOY = pygame.image.load(
+    os.path.join("Assets","blue_sprite.png"))
+
 
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("")
@@ -50,4 +57,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
