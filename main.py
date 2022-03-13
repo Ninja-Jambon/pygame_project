@@ -19,7 +19,7 @@ pygame.display.set_caption("")
 def home_window():
     WIN.fill(BLACK)
     home_text = HOME_FONT.render("Press SPACE to Start", 1, WHITE)
-    WIN.blit(home_text, (WIDTH//2 - (home_text.get_width()//2), HEIGHT//2))
+    WIN.blit(home_text, (WIDTH//2 - (home_text.get_width()//2), HEIGHT//2 - (home_text.get_height()//2)))
     pygame.display.update()
 
 def draw_window():
@@ -51,9 +51,3 @@ def main():
 if __name__ == "__main__":
     main()
 
-#TYPE DE JEUX:
-#Platfomer
-#Puzle
-#Tir
-#RPG
-#
